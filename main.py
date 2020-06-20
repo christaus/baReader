@@ -21,6 +21,7 @@
 # THE SOFTWARE.
 
 from tkinter import *
+from PIL import Image
 from configuration import *
 import gettext
 import pyperclip
@@ -28,7 +29,7 @@ import pyzbar.pyzbar as pyzbar
 import pygame
 import pygame.camera
 import os
-from PIL import Image
+from image_set import image_set
 
 pygame.init()
 pygame.camera.init()
@@ -52,23 +53,47 @@ class baReader(Tk):
         ''' Interface de la fenêtre
         '''
         self.title(_('baReader'))
-        self.do_scan()
+        self.label001 = Canvas(self,
+                              bg = couleur_fond)
+        
         ''' Implantation des composants
         '''
-
+        self.label001.pack(expand = True,
+                           fill = BOTH)
+        self.logo = image_set(self.label001, 'images{}logo'.format(os.sep))
         
         ''' Binding
         '''
+        self.after(2000, self.do_scan)
+        
     def do_scan(self):
         display = pygame.display.set_mode(self.videosize, 0)
+        pygame.display.iconify()
         camera = pygame.camera.Camera(self.videodevice, self.videosize)
         camera.start()
         screen = pygame.surface.Surface(self.videosize, 0, display)
-        screen = camera.get_image(screen)
-        pygame.image.save(screen, repertoire_script + 'data{}image.jpg'.format(os.sep))
-        img = Image.open(repertoire_script + 'data{}image.jpg'.format(os.sep))
-        codes = pyzbar.decode(img)
+        Locked = True
+        
+        while Locked:
+            screen = camera.get_image(screen)
+            pygame.image.save(screen, repertoire_script + 'data{}image.jpg'.format(os.sep))
+            img = Image.open(repertoire_script + 'data{}image.jpg'.format(os.sep))
+            codes = pyzbar.decode(img)
+            if len(codes) > 0:
+                Locked = False
+        camera.stop()
         print(codes)
+        
+        for l in codes:
+            donnees = l.data.decode('utf-8')
+            print(_('Données du code: {}'.format(donnees)))
+        try:
+            pyperclip.copy(donnees)
+        except:
+            if self.debug:
+                print(_('Impossible de copier le texte.'))
+        
+        self.destroy()
         
     def run(self):
         self.interface()
