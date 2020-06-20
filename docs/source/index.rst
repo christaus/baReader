@@ -20,11 +20,10 @@ Index
 =====
 
 * `Project Website`__
+* `Source Code`__
 
 .. _projet: https://bareader.rtfd.org/
 __ projet_
-
-* `Source Code`___
 
 .. _source: https://github.com/cgifl300/bareader/
 __ source_
