@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: pyBible\n"
-"POT-Creation-Date: 2020-06-14 17:38+0200\n"
-"PO-Revision-Date: 2020-06-14 17:38+0200\n"
+"Project-Id-Version: baReader\n"
+"POT-Creation-Date: 2020-06-20 14:08+0200\n"
+"PO-Revision-Date: 2020-06-20 14:10+0200\n"
 "Last-Translator: \n"
 "Language-Team: _\n"
 "Language: en\n"
@@ -12,186 +12,145 @@ msgstr ""
 "X-Generator: Poedit 2.0.6\n"
 "X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SearchPath-0: acquiert_bible.py\n"
-"X-Poedit-SearchPath-1: app_applytemplate.py\n"
-"X-Poedit-SearchPath-2: app_bookmark.py\n"
-"X-Poedit-SearchPath-3: app_config_mysql.py\n"
-"X-Poedit-SearchPath-4: app_config_sqlite.py\n"
-"X-Poedit-SearchPath-5: app_edit_bibles.py\n"
-"X-Poedit-SearchPath-6: app_rechercher.py\n"
-"X-Poedit-SearchPath-7: app_secret_garden.py\n"
-"X-Poedit-SearchPath-8: app_selecttranslation.py\n"
-"X-Poedit-SearchPath-9: class_autobutton.py\n"
-"X-Poedit-SearchPath-10: class_pyBible.py\n"
-"X-Poedit-SearchPath-11: configuration.py\n"
-"X-Poedit-SearchPath-12: configuration_langues.py\n"
-"X-Poedit-SearchPath-13: creer_bouton.py\n"
-"X-Poedit-SearchPath-14: db_creation.py\n"
-"X-Poedit-SearchPath-15: db_model.py\n"
-"X-Poedit-SearchPath-16: image_set.py\n"
-"X-Poedit-SearchPath-17: Makefile\n"
-"X-Poedit-SearchPath-18: pyBible.py\n"
-"X-Poedit-SearchPath-19: secret_garden.py\n"
-"X-Poedit-SearchPath-20: Setup_GUI.py\n"
+"X-Poedit-SearchPath-0: main.py\n"
 
-#: Setup_GUI.py:56
-msgid "Vous avez {} traductions."
-msgstr "You have {}translations."
-
-#: Setup_GUI.py:57
-#, python-format
-msgid "Temps d'execution: %s secondes"
-msgstr "Elapsed time: %s seconds"
-
-#: Setup_GUI.py:76
-msgid "pyBible - Configuration"
-msgstr "pyBible - Setup"
-
-#: app_applytemplate.py:52
-msgid "Appliquer Modèle"
-msgstr "Apply Model"
-
-#: app_bookmark.py:56
-msgid "Marque Pages"
-msgstr "Bookmarks"
-
-#: app_bookmark.py:61
-msgid "Supprimer"
-msgstr "Delete"
-
-#: app_bookmark.py:62
-msgid "Aller"
-msgstr "Go to"
-
-#: app_config_mysql.py:38
-msgid "Configuration MySQL"
-msgstr "MySQL Setup"
-
-#: app_config_mysql.py:45
-msgid "Serveur: "
-msgstr "Server: "
-
-#: app_config_mysql.py:55
-msgid "Nom d'utilisateur: "
-msgstr "Username: "
-
-#: app_config_mysql.py:65
-msgid "Mot de passe: "
-msgstr "Password: "
-
-#: app_config_mysql.py:75 app_config_sqlite.py:45
-msgid "Base de données: "
-msgstr "Database: "
-
-#: app_config_mysql.py:96 app_config_sqlite.py:56
-msgid "Enregistrer"
-msgstr "Save"
-
-#: app_config_sqlite.py:38
-msgid "Configuration sqlite"
-msgstr "SQLite Setup"
-
-#: app_edit_bibles.py:56
-msgid "Editeur Bibles"
-msgstr "Bibles Editor"
-
-#: app_edit_bibles.py:95
-msgid "Aucun livre sélectionné"
-msgstr "No book selected"
-
-#: app_edit_bibles.py:100
-msgid "Courte: "
-msgstr "Shortcut: "
-
-#: app_edit_bibles.py:110
-msgid "Complet: "
-msgstr "Full name: "
-
-#: app_edit_bibles.py:230
-msgid ""
-"Exportation réussie de:\n"
-"{}\n"
-"{}"
+#: main.py:55
+msgid "baReader"
 msgstr ""
-"Successfully exported:\n"
-"{}\n"
-"{}"
 
-#: app_edit_bibles.py:247
-msgid ""
-"Langue: {}\n"
-"Titre: {}\n"
-"Livre N°: {}"
-msgstr ""
-"Language: {}\n"
-"Title: {}\n"
-"Book N°: {}"
+#: main.py:89
+msgid "Données du code: {}"
+msgstr "Code data: {}"
 
-#: app_rechercher.py:53 pyBible.py:66
-msgid "Rechercher"
-msgstr "Search"
+#: main.py:94
+msgid "Impossible de copier le texte."
+msgstr "Can't copy text to clipboard."
 
-#: app_rechercher.py:103
-msgid ""
-"{} résultats.\n"
-"\n"
-msgstr ""
-"{} results.\n"
-"\n"
+#~ msgid "Vous avez {} traductions."
+#~ msgstr "You have {}translations."
 
-#: app_secret_garden.py:50
-msgid ""
-"Création du fichier de configuration\n"
-"local: secret_garden.py"
-msgstr ""
-"Creating setup file\n"
-"local: secret_garden.py"
+#~ msgid "Temps d'execution: %s secondes"
+#~ msgstr "Elapsed time: %s seconds"
 
-#: app_selecttranslation.py:57
-msgid "Choisir Traduction"
-msgstr "Select Translation"
+#~ msgid "pyBible - Configuration"
+#~ msgstr "pyBible - Setup"
 
-#: configuration_langues.py:46
-msgid "pyBible - Editeur de langues"
-msgstr "pyBible - Language Editor"
+#~ msgid "Appliquer Modèle"
+#~ msgstr "Apply Model"
 
-#: configuration_langues.py:63
-msgid "Veuillez sélectionner une langue"
-msgstr "Please select a language"
+#~ msgid "Marque Pages"
+#~ msgstr "Bookmarks"
 
-#: configuration_langues.py:70
-msgid "Modifier"
-msgstr "Modify"
+#~ msgid "Supprimer"
+#~ msgstr "Delete"
 
-#: configuration_langues.py:126 configuration_langues.py:139
-msgid ""
-"Le code\n"
-"{}\n"
-"est attribué à la langue\n"
-"{}"
-msgstr ""
-"Code\n"
-"{}\n"
-"is used for\n"
-"{}"
+#~ msgid "Aller"
+#~ msgstr "Go to"
 
-#: db_creation.py:47
-msgid "Configuration DB"
-msgstr "Setup DB"
+#~ msgid "Configuration MySQL"
+#~ msgstr "MySQL Setup"
 
-#: db_creation.py:51
-msgid "Type de base: {}"
-msgstr "DB Type: {}"
+#~ msgid "Serveur: "
+#~ msgstr "Server: "
 
-#: pyBible.py:59
-msgid "pyBible"
-msgstr "pyBible"
+#~ msgid "Nom d'utilisateur: "
+#~ msgstr "Username: "
 
-#: pyBible.py:65
-msgid ""
-"Marque\n"
-"Page"
-msgstr "Bookmark"
+#~ msgid "Mot de passe: "
+#~ msgstr "Password: "
+
+#~ msgid "Base de données: "
+#~ msgstr "Database: "
+
+#~ msgid "Enregistrer"
+#~ msgstr "Save"
+
+#~ msgid "Configuration sqlite"
+#~ msgstr "SQLite Setup"
+
+#~ msgid "Editeur Bibles"
+#~ msgstr "Bibles Editor"
+
+#~ msgid "Aucun livre sélectionné"
+#~ msgstr "No book selected"
+
+#~ msgid "Courte: "
+#~ msgstr "Shortcut: "
+
+#~ msgid "Complet: "
+#~ msgstr "Full name: "
+
+#~ msgid ""
+#~ "Exportation réussie de:\n"
+#~ "{}\n"
+#~ "{}"
+#~ msgstr ""
+#~ "Successfully exported:\n"
+#~ "{}\n"
+#~ "{}"
+
+#~ msgid ""
+#~ "Langue: {}\n"
+#~ "Titre: {}\n"
+#~ "Livre N°: {}"
+#~ msgstr ""
+#~ "Language: {}\n"
+#~ "Title: {}\n"
+#~ "Book N°: {}"
+
+#~ msgid "Rechercher"
+#~ msgstr "Search"
+
+#~ msgid ""
+#~ "{} résultats.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "{} results.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "Création du fichier de configuration\n"
+#~ "local: secret_garden.py"
+#~ msgstr ""
+#~ "Creating setup file\n"
+#~ "local: secret_garden.py"
+
+#~ msgid "Choisir Traduction"
+#~ msgstr "Select Translation"
+
+#~ msgid "pyBible - Editeur de langues"
+#~ msgstr "pyBible - Language Editor"
+
+#~ msgid "Veuillez sélectionner une langue"
+#~ msgstr "Please select a language"
+
+#~ msgid "Modifier"
+#~ msgstr "Modify"
+
+#~ msgid ""
+#~ "Le code\n"
+#~ "{}\n"
+#~ "est attribué à la langue\n"
+#~ "{}"
+#~ msgstr ""
+#~ "Code\n"
+#~ "{}\n"
+#~ "is used for\n"
+#~ "{}"
+
+#~ msgid "Configuration DB"
+#~ msgstr "Setup DB"
+
+#~ msgid "Type de base: {}"
+#~ msgstr "DB Type: {}"
+
+#~ msgid "pyBible"
+#~ msgstr "pyBible"
+
+#~ msgid ""
+#~ "Marque\n"
+#~ "Page"
+#~ msgstr "Bookmark"
 
 #~ msgid ""
 #~ "Langue: {self.do_langue(self.Code_Langue)}\n"

@@ -100,5 +100,5 @@ class baReader(Tk):
         self.mainloop()
 
 if __name__ == '__main__':
-    App = baReader(debug = True)
+    App = baReader()
     App.run()

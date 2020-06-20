@@ -30,5 +30,5 @@ couleur_fond_saisie = 'white'
 couleur_texte_saisie = 'blue'
 couleur_activebackground = couleur_texte_saisie
 couleur_activeforeground = couleur_fond_saisie
-debug = True
-langue_appli = 'fr'
+debug = False
+langue_appli = 'en'
