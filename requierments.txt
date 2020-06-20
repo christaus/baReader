@@ -1,1 +1,8 @@
-
+numpy==1.18.5
+opencv-python==4.2.0.34
+Pillow==7.1.2
+pkg-resources==0.0.0
+pygame==1.9.6
+pyperclip==1.8.0
+pyzbar==0.1.8
+tk==0.1.0

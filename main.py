@@ -23,6 +23,15 @@
 from tkinter import *
 from configuration import *
 import gettext
+import pyperclip
+import pyzbar.pyzbar as pyzbar
+import pygame
+import pygame.camera
+import os
+from PIL import Image
+
+pygame.init()
+pygame.camera.init()
 
 fr = gettext.translation('base', localedir=repertoire_script + 'locales', languages=[langue_appli], fallback=False)
 fr.install()
@@ -35,19 +44,32 @@ class baReader(Tk):
     def __init__(self, debug = False):
         Tk.__init__(self)
         self.debug = debug
+        self.videodevice = '/dev/video0'
+        self.videosize = (640, 480)
+        self.videofilename = 'capture.jpg'
     
     def interface(self):
         ''' Interface de la fenêtre
         '''
         self.title(_('baReader'))
-        
+        self.do_scan()
         ''' Implantation des composants
         '''
 
         
         ''' Binding
         '''
-    
+    def do_scan(self):
+        display = pygame.display.set_mode(self.videosize, 0)
+        camera = pygame.camera.Camera(self.videodevice, self.videosize)
+        camera.start()
+        screen = pygame.surface.Surface(self.videosize, 0, display)
+        screen = camera.get_image(screen)
+        pygame.image.save(screen, repertoire_script + 'data{}image.jpg'.format(os.sep))
+        img = Image.open(repertoire_script + 'data{}image.jpg'.format(os.sep))
+        codes = pyzbar.decode(img)
+        print(codes)
+        
     def run(self):
         self.interface()
         self.mainloop()
