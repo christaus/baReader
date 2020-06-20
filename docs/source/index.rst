@@ -19,9 +19,12 @@ Use your webcam to copy the content of a bar code into your clipboard.
 Table des matières
 ==================
 
-* `Site du projet`__
+* `Project Website`__
+* `Source Code`__
 
 .. _projet: https://bareader.rtfd.org/
 __ projet_
+.. _source: https://github.com/cgifl300/bareader/
+__ source_
    
 .. |logo| image:: _static/logo-small.png
