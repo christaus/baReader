@@ -64,7 +64,7 @@ class baReader(Tk):
         
         ''' Binding
         '''
-        self.after(2000, self.do_scan)
+        self.after(500, self.do_scan)
         
     def do_scan(self):
         display = pygame.display.set_mode(self.videosize, 0)
