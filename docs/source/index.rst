@@ -16,8 +16,8 @@ Use your webcam to copy the content of a bar code into your clipboard.
    
    
 
-Table des matières
-==================
+Index
+=====
 
 * `Project Website`__
 
