@@ -83,8 +83,8 @@ class baReader(Tk):
         Locked = True
         
         while Locked:
-            screen = camera.get_image(screen)
-            pygame.image.save(screen, repertoire_script + 'data{}image.jpg'.format(os.sep))
+            img = camera.get_image(screen)
+            pygame.image.save(img, repertoire_script + 'data{}image.jpg'.format(os.sep))
             img = Image.open(repertoire_script + 'data{}image.jpg'.format(os.sep))
             codes = pyzbar.decode(img)
             if len(codes) > 0:
