@@ -22,6 +22,7 @@
 
 from tkinter import *
 from PIL import Image
+import PIL
 from configuration import *
 import gettext
 import pyperclip
@@ -30,6 +31,7 @@ import pygame
 import pygame.camera
 import os
 from image_set import image_set
+import time
 
 pygame.init()
 pygame.camera.init()
@@ -81,6 +83,7 @@ class baReader(Tk):
             codes = pyzbar.decode(img)
             if len(codes) > 0:
                 Locked = False
+            time.sleep(2)
         camera.stop()
         print(codes)
         
