@@ -9,6 +9,8 @@ baReader Documentation
 |logo|
 
 Use your webcam to copy the content of a bar code into your clipboard.
+For a better use this version include the use of tesseract (for OCR).
+You should first considere installing this opensource software.
 
 .. toctree::
    :maxdepth: 2
