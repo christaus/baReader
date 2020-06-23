@@ -89,7 +89,7 @@ class baReader(Tk):
             codes = pyzbar.decode(img)
             if len(codes) > 0:
                 Locked = False
-            time.sleep(2)
+            time.sleep(1)
         camera.stop()
         print(codes)
         
