@@ -45,8 +45,9 @@ class baReader(Tk):
     def __init__(self, debug = False):
         Tk.__init__(self)
         self.debug = debug
-        self.videodevice = '/dev/video0'
+        self.camlist = pygame.camera.list_cameras()
         self.videosize = (640, 480)
+        self.videodevice = pygame.camera.Camera(self.camlist[0],self.videosize)
         self.videofilename = 'capture.jpg'
     
     def interface(self):
