@@ -32,7 +32,6 @@ import os
 from image_set import image_set
 
 pygame.init()
-pygame.camera.init()
 
 fr = gettext.translation('base', localedir=repertoire_script + 'locales', languages=[langue_appli], fallback=False)
 fr.install()
