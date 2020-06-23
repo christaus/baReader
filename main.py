@@ -46,10 +46,15 @@ class baReader(Tk):
     def __init__(self, debug = False):
         Tk.__init__(self)
         self.debug = debug
-        pygame.camera.init()
+        try:
+            pygame.camera.init()
+        except:
+            print('You must have a camera!')
+            return 0
         self.camlist = pygame.camera.list_cameras()
         self.videosize = (640, 480)
-        self.videodevice = pygame.camera.Camera(self.camlist[0],self.videosize)
+        self.camera = self.camlist[0]
+        self.videodevice = pygame.camera.Camera(self.camera, self.videosize)
         self.videofilename = 'capture.jpg'
     
     def interface(self):
@@ -72,7 +77,7 @@ class baReader(Tk):
     def do_scan(self):
         display = pygame.display.set_mode(self.videosize, 0)
         pygame.display.iconify()
-        camera = pygame.camera.Camera(self.videodevice, self.videosize)
+        camera = pygame.camera.Camera(self.camera, self.videosize)
         camera.start()
         screen = pygame.surface.Surface(self.videosize, 0, display)
         Locked = True
