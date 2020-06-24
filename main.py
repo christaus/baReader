@@ -100,7 +100,7 @@ class baReader(Tk):
         for l in codes:
             donnees = l.data.decode('utf-8')
             print(_('Données du code: {}'.format(donnees)))
-        donnees = donnees + text
+        donnees = '{}\n{}'.format(donnees, text)
         try:
             pyperclip.copy(donnees)
         except:
