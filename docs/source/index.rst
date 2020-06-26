@@ -9,8 +9,10 @@ baReader Documentation
 |logo|
 
 Use your webcam to copy the content of a bar code into your clipboard.
-For a better use this version include the use of tesseract (for OCR).
-You should first considere installing this opensource software.
+For a better use this version may include the use of tesseract (for OCR).
+You should first considere installing this opensource software if you need OCR.
+
+To enable OCR just use main-with-tesseract.py instead of main.py.
 
 .. toctree::
    :maxdepth: 2
