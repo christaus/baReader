@@ -32,7 +32,7 @@ import pygame.camera
 import os
 from image_set import image_set
 import time
-import pytesseract
+#import pytesseract
 
 pygame.init()
 
@@ -90,9 +90,9 @@ class baReader(Tk):
             codes = pyzbar.decode(img)
             if len(codes) > 0:
                 Locked = False
-            text = pytesseract.image_to_string(Image.open(repertoire_script + 'data{}image.jpg'.format(os.sep)))
-            if len(text) > 0:
-                Locked = False
+            #text = pytesseract.image_to_string(Image.open(repertoire_script + 'data{}image.jpg'.format(os.sep)))
+            #if len(text) > 0:
+            #    Locked = False
             time.sleep(2)
         os.remove(repertoire_script + 'data{}image.jpg'.format(os.sep))
         camera.stop()
@@ -100,7 +100,7 @@ class baReader(Tk):
         for l in codes:
             donnees = l.data.decode('utf-8')
             print(_('Données du code: {}'.format(donnees)))
-        donnees = '{}\n{}'.format(donnees, text)
+        #donnees = '{}\n{}'.format(donnees, text)
         try:
             pyperclip.copy(donnees)
         except:
