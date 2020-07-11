@@ -51,7 +51,7 @@ class baReader(Tk):
             pygame.camera.init()
         except:
             print('You must have a camera!')
-            return 0
+            return None
         self.camlist = pygame.camera.list_cameras()
         self.videosize = (640, 480)
         self.camera = self.camlist[0]
@@ -93,7 +93,7 @@ class baReader(Tk):
             #text = pytesseract.image_to_string(Image.open(repertoire_script + 'data{}image.jpg'.format(os.sep)))
             #if len(text) > 0:
             #    Locked = False
-            time.sleep(2)
+            time.sleep(0.25)
         os.remove(repertoire_script + 'data{}image.jpg'.format(os.sep))
         camera.stop()
         
