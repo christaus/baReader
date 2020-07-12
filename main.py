@@ -93,7 +93,7 @@ class baReader(Tk):
             #text = pytesseract.image_to_string(Image.open(repertoire_script + 'data{}image.jpg'.format(os.sep)))
             #if len(text) > 0:
             #    Locked = False
-            time.sleep(0.25)
+            time.sleep(0.5)
         os.remove(repertoire_script + 'data{}image.jpg'.format(os.sep))
         camera.stop()
         
