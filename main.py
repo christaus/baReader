@@ -51,7 +51,7 @@ class baReader(Tk):
             pygame.camera.init()
         except:
             print('You must have a camera!')
-            return None
+            exit(0)
         self.camlist = pygame.camera.list_cameras()
         self.videosize = (640, 480)
         self.camera = self.camlist[0]
