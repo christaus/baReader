@@ -20,24 +20,25 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from tkinter import *
-from configuration import *
-import codecs
-import os
 import gettext
+from tkinter import *
+
+from configuration import *
 
 fr = gettext.translation('base', localedir=repertoire_script + 'locales', languages=[langue_appli], fallback=False)
 fr.install()
 _ = fr.gettext
 ngettext = fr.ngettext
 
+
 class AppBookmark(Toplevel):
     ''' Interface graphique ...
     '''
-    def __init__(self, master, debug = False):
+
+    def __init__(self, master, debug=False):
         Toplevel.__init__(self)
         self.debug = debug
-    
+
     def interface(self):
         ''' Interface de la fenêtre
         '''
@@ -46,12 +47,12 @@ class AppBookmark(Toplevel):
         ''' Implantation des composants
         '''
 
-        
         ''' Binding
         '''
-    
+
     def run(self):
         self.interface()
+
 
 if __name__ == '__main__':
     w = Tk()
